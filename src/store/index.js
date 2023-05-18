@@ -1,8 +1,8 @@
 import { createStore, combineReducers, applyMiddleware, compose } from "redux";
-
+import produceReducer from "./produce";
 
 export const rootReducer = combineReducers({
-
+  produce: produceReducer 
 });
 
 const configureStore = (preloadedState) => {
